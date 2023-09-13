@@ -1,6 +1,10 @@
 
 /* Work Sans Font from Google Fonts */
 
+
+/* Shared Styles */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Open+Sans:wght@800&family=Overpass&family=Work+Sans:wght@400;600;700;800&display=swap');
 
 *{
@@ -8,6 +12,17 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Overpass', sans-serif;
 font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+    border-radius: 8px;
+color: #FFF;
+background: #FF900E;
+padding: 20px 25px;
+font-size: 1.25rem;
+font-weight: 600;
+cursor: pointer;
+border: 0;
 }
 
 /* Header Styles */
@@ -61,4 +76,34 @@ nav li a{
 
 .banner-description{
     color: #727272;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+ header{
+    padding: 20px;
+ }
+
+ nav{
+    flex-direction: column;
+ }
+
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width: 576px) and (max-width: 996px) {
+
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
